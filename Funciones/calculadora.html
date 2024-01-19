@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="calculadora.css">
+  <script src="calculadora.js" defer></script>
+  <title>Calculadora Básica</title>
+</head>
+<body>
+  <div class="calculadora">
+    <div id="pantalla" class="pantalla">0</div>
+    <div class="teclas">
+      <div class="fila">
+        <button id="btn7" onclick="agregarDigito('7')">7</button>
+        <button id="btn8" onclick="agregarDigito('8')">8</button>
+        <button id="btn9" onclick="agregarDigito('9')">9</button>
+        <button id="btnDiv" onclick="agregarOperador('/')">/</button>
+      </div>
+      <div class="fila">
+        <button id="btn4" onclick="agregarDigito('4')">4</button>
+        <button id="btn5" onclick="agregarDigito('5')">5</button>
+        <button id="btn6" onclick="agregarDigito('6')">6</button>
+        <button id="btnMul" onclick="agregarOperador('*')">*</button>
+      </div>
+      <div class="fila">
+        <button id="btn1" onclick="agregarDigito('1')">1</button>
+        <button id="btn2" onclick="agregarDigito('2')">2</button>
+        <button id="btn3" onclick="agregarDigito('3')">3</button>
+        <button id="btnResta" onclick="agregarOperador('-')">-</button>
+      </div>
+      <div class="fila">
+        <button id="btn0" onclick="agregarDigito('0')">0</button>
+        <button id="btnPunto" onclick="agregarPunto()">.</button>
+        <button id="btnEliminar" onclick="eliminar()">C</button>
+        <button id="btnIgual" onclick="calcularResultado()">=</button>
+        <button id="btnSuma" onclick="agregarOperador('+')">+</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
